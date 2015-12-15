@@ -10,6 +10,7 @@ boolean Right = false;
 PImage myImage;
 PImage myImage2;
 PImage myImage3;
+PImage myImage4;
 
 void setup() {
   size(600, 600); //background size
@@ -17,6 +18,8 @@ void setup() {
   myImage = loadImage("Eren (right).png");
   myImage2 = loadImage("Eren (left).png");
   myImage3 = loadImage("Eren (front).png");
+  myImage4 = loadImage("Eren (Back).png");
+ 
   rectMode(CENTER); 
   for (int i = 0; i < 4; i++) { //enemy for loop
     myEnemies[i] = new Enemies(random(20, 580), random(10, 580), color(#030303), 2, false, false, false, false);
@@ -37,7 +40,7 @@ void draw() {
     image(myImage3, xPos, yPos);
   }
   if (keyCode == UP) {                              
-    image(myImage3, xPos, yPos);
+    image(myImage4, xPos, yPos);
   }
 
   for (int i =0; i < 4; i++) {
