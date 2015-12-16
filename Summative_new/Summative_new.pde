@@ -10,6 +10,7 @@ boolean Right = false;
 PImage myImage;
 PImage myImage2;
 PImage myImage3;
+PImage myImage4;
 boolean GameOn = false;
 
 void setup() {
@@ -19,6 +20,7 @@ void setup() {
   myImage = loadImage("Eren (right).png");
   myImage2 = loadImage("Eren (left).png");
   myImage3 = loadImage("Eren (front).png");
+  myImage4 = loadImage("Eren (Back).png");
   image(myImage3, xPos, yPos);
   rectMode(CENTER); 
   for (int i = 0; i < 4; i++) { //enemy for loop
